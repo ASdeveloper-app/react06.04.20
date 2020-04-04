@@ -1,2 +1,4 @@
-# Aplicacion Web con React y Redux
+# - Rick and Morty -
+## Fans Page 
+### Web application with React and Redux
 
