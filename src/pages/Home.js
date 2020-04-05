@@ -8,6 +8,7 @@ const Home = () => {
       <Flex m="auto" w={["100vw", "30vw", "20vw", "60vw", ]}>
         <Image src="../rickymorty.png" alt="Rick & Morty"/>
       </Flex>
+      <br/>
       <Flex justify="center">
         <Text className="mg-home" w="80vw" color="c1.100">This page is about the best show on earth, Rick and Morty! </Text>
       </Flex>
