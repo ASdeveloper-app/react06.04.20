@@ -21,7 +21,7 @@ export default class Navbar extends Component {
             <div className="nav-center">
                 <div className="nav-header">
                     <Link to="/">
-                        <img className ="nav-img" src="../logorm.png" width alt="Beach Resort"/>
+                        <img className ="nav-img" src="../logorm.png" width alt="Rick & Morty"/>
                     </Link>
                     <button type="button" className="nav-btn" onClick={this.handleToggle}>
                         <FaAlignJustify className="nav-icon"/>
@@ -29,12 +29,12 @@ export default class Navbar extends Component {
                 </div>
                 <ul className={this.state.isOpen?"nav-links show-nav":"nav-links"}>
                     <li>
-                    <Link to="/">
+                    <Link to="/characters">
                         Characters
                     </Link>
                     </li>
                     <li>
-                    <Link to="/rooms">
+                    <Link to="/episodes">
                         Episodes
                     </Link>
                     </li>

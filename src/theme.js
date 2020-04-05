@@ -9,11 +9,11 @@ const customTheme = {
   colors: {
     ...theme.colors,
     c1: {
-      100: "#353F49",
-      200: "#353F49", 
-      300: "#353F49",
-      400: "#353F49",
-      500: "#353F49"
+      100: "white",
+      200: "white", 
+      300: "white",
+      400: "white",
+      500: "white"
     },
     c2: {
       100: "#63cbfe",
