@@ -12,7 +12,9 @@ const Episodes = () => {
       </Flex>
       <SearchBar/>
       <br/>
-      <EpisodesList/>
+      <Flex m="auto" w="80vw">
+        <EpisodesList/>
+      </Flex>
     </>
   )
 }
