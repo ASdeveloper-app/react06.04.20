@@ -25,8 +25,8 @@ function App() {
         <Route exact path="/news" component={News}/>
         <Route exact path="/characters" component={Characters}/>
         <Route exact path="/character/1" component={Character}/>
-        <Route exact path="/Episodes" component={Episodes}/>
-        <Route exact path="/Episode/1" component={Episode}/>
+        <Route exact path="/episodes" component={Episodes}/>
+        <Route exact path="/episode/1" component={Episode}/>
         <Route component={Error}/>
       </Switch>  
       <Footer/>

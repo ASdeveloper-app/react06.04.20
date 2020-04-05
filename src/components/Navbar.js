@@ -12,36 +12,41 @@ export default class Navbar extends Component {
     }
     render() {
         return (
-            <Flex top={0}
-            zIndex="99"
-            w="100vw"
-            h="7vh"
-            align="center">
+          <Flex top={0}
+          zIndex="99"
+          w="100vw"
+          h="7vh"
+          align="center">
             <nav className="navbar">
-            <div className="nav-center">
+              <div className="nav-center">
                 <div className="nav-header">
-                    <Link to="/">
-                        <img className="nav-img" src="../logorm.png" alt="Rick & Morty"/>
-                    </Link>
-                    <button type="button" className="nav-btn" onClick={this.handleToggle}>
-                        <FaAlignJustify className="nav-icon"/>
-                    </button>
+                  <Link to="/">
+                    <img className="nav-img" src="../logorm.png" alt="Rick & Morty"/>
+                  </Link>
+                  <button type="button" className="nav-btn" onClick={this.handleToggle}>
+                    <FaAlignJustify className="nav-icon"/>
+                  </button>
                 </div>
                 <ul className={this.state.isOpen?"nav-links show-nav":"nav-links"}>
-                    <li>
-                    <Link to="/characters">
-                        Characters
-                    </Link>
-                    </li>
-                    <li>
-                    <Link to="/episodes">
-                        Episodes
-                    </Link>
-                    </li>
+                  <li>
+                  <Link to="/news">
+                    News
+                  </Link>
+                  </li>
+                  <li>
+                  <Link to="/characters">
+                    Characters
+                  </Link>
+                  </li>
+                  <li>
+                  <Link to="/episodes">
+                    Episodes
+                  </Link>
+                  </li>
                 </ul>
-            </div>
+              </div>
             </nav>
-            </Flex>
+          </Flex>
         )
     }
 }
