@@ -21,7 +21,7 @@ export default class Navbar extends Component {
             <div className="nav-center">
                 <div className="nav-header">
                     <Link to="/">
-                        <img className ="nav-img" src="../logorm.png" width alt="Rick & Morty"/>
+                        <img className="nav-img" src="../logorm.png" alt="Rick & Morty"/>
                     </Link>
                     <button type="button" className="nav-btn" onClick={this.handleToggle}>
                         <FaAlignJustify className="nav-icon"/>
