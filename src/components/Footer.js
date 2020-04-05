@@ -5,3 +5,7 @@ export default function Footer () {
     <p>Hello from Footer component</p>
   )
 }
+
+
+
+
