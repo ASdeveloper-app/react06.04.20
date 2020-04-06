@@ -13,7 +13,7 @@ const News = () => {
         <Box maxW="sm" borderWidth="1px" rounded="lg" overflow="hidden" backgroundColor="white">
           <Box p="6" w="50vw">
             <Box d="flex" alignItems="baseline">
-              <Badge rounded="full" px="2" variantColor="teal">
+              <Badge rounded="full" px="2" color="white" bg="#00b1c9">
                 Recent Characters
               </Badge>
             </Box>
@@ -43,7 +43,7 @@ const News = () => {
         <Box maxW="sm" borderWidth="1px" rounded="lg" overflow="hidden" backgroundColor="white">
           <Box p="6" w="50vw">
             <Box d="flex" alignItems="baseline">
-              <Badge rounded="full" px="2" variantColor="teal">
+              <Badge rounded="full" px="2" color="white" bg="#00b1c9">
                 Recent Episodes
               </Badge>
             </Box>

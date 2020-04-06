@@ -8,7 +8,6 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-import teal from '@material-ui/core/colors/teal';
 import { Typography } from '@material-ui/core';
 
 function createData(name, calories, fat, carbs, protein) {
@@ -28,7 +27,7 @@ export default function SimpleTable() {
     <TableContainer component={Paper}>
       <Table aria-label="simple table">
         <TableHead>
-          <TableRow bgcolor="teal">
+          <TableRow bgcolor="#00b1c9">
             <TableCell>
             <Typography variant="h5" style={{ color: "white" }}>
               Name
@@ -55,7 +54,7 @@ export default function SimpleTable() {
               <TableCell >{row.calories}</TableCell>
               <TableCell align="center">
                 <IconButton aria-label="upload picture" component="span">
-                  <VisibilityIcon style={{ color: teal[500] }}/>
+                  <VisibilityIcon style={{ color: "#00b1c9" }}/>
                 </IconButton>
               </TableCell>
             </TableRow>
