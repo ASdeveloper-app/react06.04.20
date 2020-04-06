@@ -4,12 +4,11 @@ const initialState = {
   list: []
 }
 
-export function showUsers(state, action){
-  switch(action, type){
+export function showCharacters(state = initialState, action){
+  switch(action.type){
     case SHOW_CHARACTERS:
-      return Object.assign({}, state, {list:action.payload})
-    default: 
+      return Object.assign({}, state, { list: action.payload })
+    default:
       return state
   }
-
 }

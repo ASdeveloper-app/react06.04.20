@@ -1,12 +1,15 @@
-export const SHOW_CHARACTERS = "SHOW_CHARACTERS"
+import axios from 'axios'
+
+export const SHOW_CHARACTERS = 'SHOW_CHARACTERS'
+
 
 export function showCharacters(){
-    const characters = [
-        {id: 1, name: 'Simone'},
-        {id: 2, name: 'Sam'},
-    ];
-    return {
-        type: SHOW_CHARACTERS,
-        payload: characters
+    return (dispatch, getState) => {
+        axios.get('https://rickandmortyapi.com/api/character')
+        .then((response) => {
+            console.log(response)
+            dispatch({ type: SHOW_CHARACTERS, payload: response.data.results })
+        })
     }
+
 }

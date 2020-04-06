@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 
 import Home from './pages/Home';
 import News from './pages/News';
@@ -19,30 +18,28 @@ import {Route, Switch} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 // Redux
-import { Provider } from 'react-redux';
-import store from './redux/store'
+
 
 function App() {
   return (
     <>
-      <Provider store = { store }>
       <Navbar/>
-      <br/>
-      <Switch>
-        <Route exact path="/" component={Home}/>
-        <Route exact path="/news" component={News}/>
-        <Route exact path="/characters" component={Characters}/>
-        <Route exact path="/characters/1" component={Character}/>
-        <Route exact path="/episodes" component={Episodes}/>
-        <Route exact path="/episodes/1" component={Episode}/>
-        <Route exact path="/locations" component={Locations}/>
-        <Route exact path="/locations/1" component={Location}/>
-        <Route component={Error}/>
-      </Switch>  
-      <br/>
-      <br/>
+        <br/>
+        <br/>
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route exact path="/news" component={News}/>
+          <Route exact path="/characters" component={Characters}/>
+          <Route exact path="/characters/1" component={Character}/>
+          <Route exact path="/episodes" component={Episodes}/>
+          <Route exact path="/episodes/1" component={Episode}/>
+          <Route exact path="/locations" component={Locations}/>
+          <Route exact path="/locations/1" component={Location}/>
+          <Route component={Error}/>
+        </Switch>  
+        <br/>
+        <br/>
       <Footer/>
-      </Provider>
     </>
   );
 }

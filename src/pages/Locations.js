@@ -9,7 +9,7 @@ const Locations = () => {
     <>
       <br/>
       <Flex m="auto" w={["50vw", "30vw", "50vw", "25vw", ]}>
-        <Image src="../episode.png" alt="Rick & Morty"/>
+        <Image src="../locations.png" alt="Rick & Morty"/>
       </Flex>
       <br/>
       <SearchBar/>
