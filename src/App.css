@@ -16,6 +16,7 @@
   left: 0;
   width: 100%;
   padding: 0.75rem 2rem;
+  background-color: #2b2b2b;
 }
 
 .nav-img {
@@ -29,7 +30,7 @@
 
 
 .nav-btn {
-  background-color: transparent;
+  background-color: #2b2b2b;
   border: none;
   cursor: pointer;
   outline: none;
@@ -52,7 +53,7 @@
   display: block;
   text-decoration: none;
   padding: 1rem 0;
-  color: var(--mainBlack);
+  color: var(--mainTeal);
   transition: var(--mainTransition);
   text-align: center;
   font-size: 1rem;
@@ -65,11 +66,11 @@
 }
 
 .show-nav {
-  height: 170px;
+  height: 220px;
 }
 
 /* Responsive Desing */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   .nav-btn {
     display: none;
   }
@@ -81,8 +82,9 @@
   .nav-links {
     height: auto;
     display: flex;
-    margin-left: 45vw;
-    background-color: transparent;
+    margin-left: 30vw;
+    margin-top: 1vw;
+    background-color: #2b2b2b;
   }
   .nav-links a {
     margin: 0 1rem;

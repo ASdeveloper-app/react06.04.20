@@ -29,7 +29,8 @@ class Characters extends Component {
     const { suggestions } = this.props;
     return (
       <>
-        <Flex m="auto" w={["100vw", "30vw", "20vw", "30vw", ]}>
+        <br/>
+        <Flex m="auto" w={["50vw", "30vw", "50vw", "30vw", ]}>
         <Image src="../characters.png" alt="Rick & Morty"/>
         </Flex>
         <br/>

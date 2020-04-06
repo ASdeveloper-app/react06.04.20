@@ -43,6 +43,11 @@ export default class Navbar extends Component {
                     Episodes
                   </Link>
                   </li>
+                  <li>
+                  <Link to="/locations">
+                    Locations
+                  </Link>
+                  </li>
                 </ul>
               </div>
             </nav>

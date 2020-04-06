@@ -22,7 +22,7 @@ const rows = [
   createData('Gingerbread', 356, 16.0, 49, 3.9),
 ];
 
-export default function EpisodesList() {
+export default function LocationsList() {
   return (
     <TableContainer component={Paper}>
       <Table aria-label="simple table">
@@ -35,7 +35,7 @@ export default function EpisodesList() {
             </TableCell>
             <TableCell>
             <Typography variant="h5" style={{ color: "white" }}>
-              Episode
+              Dimension
             </Typography>
             </TableCell>
             <TableCell align="center">

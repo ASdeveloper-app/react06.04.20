@@ -5,7 +5,7 @@ import {Link} from "react-router-dom"
 const News = () => {
   return (
     <>
-      <Flex m="auto" w={["100vw", "30vw", "20vw", "20vw", ]}>
+      <Flex m="auto" w={["50vw", "30vw", "30vw", "20vw" ]}>
       <Image src="../news.png" alt="Rick & Morty"/>
       </Flex>
       <br/>
@@ -71,6 +71,8 @@ const News = () => {
           <span></span>
           Characters
         </Link>
+      </Flex>
+      <Flex justify="center">
         <Link to="/episodes" className="btn">
           <span></span>
           <span></span>

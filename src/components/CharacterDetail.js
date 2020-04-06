@@ -14,20 +14,58 @@ export default function CharacterDetail () {
           mt="1"
           fontWeight="semibold"
           as="h4"
-          lineHeight="tight"
-          isTruncated
           >
-            Name
+            Name:
           </Box>
           <Box
           mt="1"
           fontWeight="semibold"
           as="h4"
-          lineHeight="tight"
-          isTruncated
           >
-            Name
+            Status:
           </Box>
+          <Box
+          mt="1"
+          fontWeight="semibold"
+          as="h4"
+          >
+            Species:
+          </Box>
+          <Box
+          mt="1"
+          fontWeight="semibold"
+          as="h4"
+          >
+            Type:
+          </Box>
+          <Box
+            mt="1"
+            fontWeight="semibold"
+            as="h4"
+            >
+              Gender:
+            </Box>
+            <Box
+            mt="1"
+            fontWeight="semibold"
+            as="h4"
+            >
+              Origin:
+            </Box>
+            <Box
+            mt="1"
+            fontWeight="semibold"
+            as="h4"
+            >
+              Location:
+            </Box>
+            <Box
+            mt="1"
+            fontWeight="semibold"
+            as="h4"
+            >
+              Episodes:
+            </Box>
         </Box>
       </Box>
     </Flex>

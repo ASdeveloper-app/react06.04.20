@@ -1,21 +1,21 @@
 import React from 'react'
 import Title from '../components/Title'
-import EpisodeDetail from '../components/EpisodeDetail'
+import LocationDetail from '../components/LocationDetail'
 import { Flex, Image } from '@chakra-ui/core'
 
-const Episode = () => {
+const Location = () => {
   return (
     <>
       <br/>
       <Flex m="auto" w={["50vw", "30vw", "50vw", "25vw", ]}>
-      <Image src="../episode.png" alt="Rick & Morty"/>
+        <Image src="../episode.png" alt="Rick & Morty"/>
       </Flex>
       <br/>
       <Title/>
       <br/>
-      <EpisodeDetail/> 
+      <LocationDetail/> 
     </>
   )
 }
 
-export default Episode
+export default Location

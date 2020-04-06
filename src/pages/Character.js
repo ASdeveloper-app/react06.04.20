@@ -6,7 +6,7 @@ import Title from '../components/Title'
 const Character = () => {
   return (
     <>
-      <Flex m="auto" w={["100vw", "30vw", "20vw", "30vw", ]}>
+      <Flex m="auto" w={["50vw", "50vw", "50vw", "30vw", ]}>
       <Image src="../characters.png" alt="Rick & Morty"/>
       </Flex>
       <br/>

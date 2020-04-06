@@ -14,9 +14,10 @@ export default function Footer() {
         bottom={0}
         zIndex="99"
         textAlign="center"
-        backgroundColor="transparent"
+        backgroundColor="#2b2b2b"
         w="100vw"
-        h="4vh"
+        h="6vh"
+        position="fixed"
         justify="center">
         <BreadcrumbItem mt={1}>
           <BreadcrumbLink color="c1.100" > 06 . 04 . 20</BreadcrumbLink>
