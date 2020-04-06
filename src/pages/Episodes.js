@@ -10,11 +10,13 @@ const Episodes = () => {
       <Flex m="auto" w={["100vw", "30vw", "20vw", "25vw", ]}>
       <Image src="../episodes.png" alt="Rick & Morty"/>
       </Flex>
+      <br/>
       <SearchBar/>
       <br/>
       <Flex m="auto" w="80vw">
         <EpisodesList/>
       </Flex>
+      <br/>
     </>
   )
 }

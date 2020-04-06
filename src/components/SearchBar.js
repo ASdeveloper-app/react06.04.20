@@ -1,5 +1,5 @@
 import React from 'react'
-import { Input, Flex, IconButton } from "@chakra-ui/core";
+import { Flex, Input, IconButton } from "@chakra-ui/core";
 
 export default function SearchBar () {
   return (
@@ -11,3 +11,6 @@ export default function SearchBar () {
     </>
   )
 }
+
+
+

@@ -10,7 +10,9 @@ const Characters = () => {
       <Flex m="auto" w={["100vw", "30vw", "20vw", "30vw", ]}>
       <Image src="../characters.png" alt="Rick & Morty"/>
       </Flex>
+      <br/>
       <SearchBar/>
+      <br/>
       <CharactersList/>
       <br/> 
     </>

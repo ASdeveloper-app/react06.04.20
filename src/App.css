@@ -3,6 +3,7 @@
   --primary-color: #82ff69;
   --mainWhite: white;
   --mainBlack: black;
+  --mainTeal: teal;
   --mainTransition: all 0.3s linear;
   --mainSpacing: 3px;
 
@@ -60,7 +61,7 @@
 }
 
 .nav-links a:hover {
-  color: var(--mainBlack);
+  color: var(--mainTeal);
 }
 
 .show-nav {
