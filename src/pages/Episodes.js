@@ -1,7 +1,8 @@
 import React from 'react'
-import EpisodesList from '../components/EpisodesList'
 import { Flex, Image } from '@chakra-ui/core'
-// import {Link} from "react-router-dom"
+
+import EpisodesList from '../components/EpisodesList'
+
 
 const Episodes = () => {
   return (

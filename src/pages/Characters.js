@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import CharactersList from '../components/CharactersList'
 import { Flex, Image } from '@chakra-ui/core'
 import { connect } from 'react-redux'
-// import {Link} from "react-router-dom"
+
+import CharactersList from '../components/CharactersList'
 
 class Characters extends Component {
 

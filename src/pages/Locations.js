@@ -1,7 +1,7 @@
 import React from 'react'
-import LocationsList from '../components/LocationsList'
 import { Flex, Image } from '@chakra-ui/core'
-// import {Link} from "react-router-dom"
+
+import LocationsList from '../components/LocationsList'
 
 const Locations = () => {
   return (

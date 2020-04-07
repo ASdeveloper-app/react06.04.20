@@ -1,7 +1,8 @@
 import React from 'react'
-import Title from '../components/Title'
-import EpisodeDetail from '../components/EpisodeDetail'
 import { Flex, Image } from '@chakra-ui/core'
+
+import EpisodeDetail from '../components/EpisodeDetail'
+import Title from '../components/Title'
 
 const Episode = () => {
   return (

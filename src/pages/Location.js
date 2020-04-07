@@ -1,7 +1,8 @@
 import React from 'react'
-import Title from '../components/Title'
-import LocationDetail from '../components/LocationDetail'
 import { Flex, Image } from '@chakra-ui/core'
+
+import LocationDetail from '../components/LocationDetail'
+import Title from '../components/Title'
 
 const Location = () => {
   return (

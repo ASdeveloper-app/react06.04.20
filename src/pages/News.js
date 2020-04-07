@@ -1,12 +1,13 @@
 import React from 'react'
 import { Flex, Image } from '@chakra-ui/core'
 
+// Recientes (Pendiente)
 import NewsCharacters from '../components/NewsCharacters'
 import NewsEpisodes from '../components/NewsEpisodes'
 import NewsLocations from '../components/NewsLocations'
 
 // Busqueda de personajes
-import SearchBar from '../components/SearchBar'
+import SearchCharacter from '../components/SearchBar'
 import Results from '../components/Results'
 // Busqueda de episodios
 import SearchEpisode from '../components/SearchEpisode'
@@ -34,7 +35,7 @@ const News = () => {
         </Flex>
       <br/>
       <Flex justify="center">
-        <SearchBar />
+        <SearchCharacter />
       </Flex>
       <br/>
       <Flex justify="center">

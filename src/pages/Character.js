@@ -1,7 +1,9 @@
 import React from 'react'
-import CharacterDetail from '../components/CharacterDetail'
 import { Flex, Image } from '@chakra-ui/core'
+
+import CharacterDetail from '../components/CharacterDetail'
 import Title from '../components/Title'
+
 
 const Character = () => {
   return (

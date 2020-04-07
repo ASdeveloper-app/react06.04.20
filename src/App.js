@@ -1,4 +1,5 @@
 import React from 'react';
+import {Route, Switch} from 'react-router-dom';
 
 import Home from './pages/Home';
 import News from './pages/News';
@@ -13,12 +14,8 @@ import Episode from './pages/Episode';
 import Locations from './pages/Locations';
 import Location from './pages/Location';
 
-import {Route, Switch} from 'react-router-dom';
-
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-// Redux
-
 
 function App() {
   return (
