@@ -3,6 +3,7 @@ import { Flex, Image } from '@chakra-ui/core'
 
 import NewsCharacters from '../components/NewsCharacters'
 import NewsEpisodes from '../components/NewsEpisodes'
+import NewsLocations from '../components/NewsLocations'
 
 // Busqueda de personajes
 import SearchBar from '../components/SearchBar'
@@ -24,6 +25,8 @@ const News = () => {
       <NewsCharacters/>
       <br/>
       <NewsEpisodes/>
+      <br/>
+      <NewsLocations/>
       <br/>
       <br/>
       <Flex m="auto" w={["50vw", "30vw", "50vw", "30vw"]}>

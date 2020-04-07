@@ -1,24 +1,7 @@
 import React, { Component } from 'react'
 import { Flex, Box, Badge, Image } from '@chakra-ui/core'
 
-// Redux
-import { connect } from 'react-redux'
-import { showCharacters } from '../redux/actions/showCharacters'
-
 class NewsCharacters extends Component {
-  componentDidMount() {
-    this.props.showCharacters();
-  }
-
-// Itera las Cards de los personajes
-  renderCharacterCard() {
-    return this.props.characters.map((character, i) => {
-      return (
-        <p character= {character} key={i}> {character.name} </p>
-      )
-    })
-  }
-  
   render(){
     return (
       <>
@@ -42,7 +25,7 @@ class NewsCharacters extends Component {
           </Box>
         </Box>
         <Box maxW="sm" borderWidth="1px" rounded="lg" overflow="hidden">
-          <Image src="morty.jpeg" alt="Morty" />
+          <Image src="rick.jpeg" alt="rick" />
         </Box>
       </Flex>
       </>
@@ -50,10 +33,4 @@ class NewsCharacters extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  return {
-    characters: state.character.list
-  }
-}
-
-export default connect(mapStateToProps, {showCharacters})(NewsCharacters)
+export default NewsCharacters
