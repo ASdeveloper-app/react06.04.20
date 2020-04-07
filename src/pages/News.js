@@ -1,9 +1,11 @@
 import React from 'react'
 import { Flex, Image } from '@chakra-ui/core'
-import SearchBar from '../components/SearchBar'
 import NewsCharacters from '../components/NewsCharacters'
 import NewsEpisodes from '../components/NewsEpisodes'
+import SearchBar from '../components/SearchBar'
 import Results from '../components/Results'
+import SearchEpisode from '../components/SearchEpisode'
+import ResultEpisode from '../components/ResultEpisode'
 
 const News = () => {
   return (
@@ -29,19 +31,19 @@ const News = () => {
         <Results/>
       </Flex>
       <br/>
-      {/* <Flex m="auto" w={["50vw", "30vw", "50vw", "25vw", ]}>
+      <Flex m="auto" w={["50vw", "30vw", "50vw", "25vw", ]}>
       <Image src="../episodes.png" alt="Rick & Morty"/>
       </Flex>
       <br/>
       <Flex justify="center">
-        <SearchBar />
+        <SearchEpisode />
       </Flex>
       <br/>
       <Flex justify="center">
-        <Results/>
+        <ResultEpisode/>
       </Flex>
       <br/>
-      <Flex m="auto" w={["50vw", "30vw", "50vw", "25vw", ]}>
+      {/* <Flex m="auto" w={["50vw", "30vw", "50vw", "25vw", ]}>
         <Image src="../locations.png" alt="Rick & Morty"/>
       </Flex>
       <br/>

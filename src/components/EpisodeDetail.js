@@ -1,7 +1,7 @@
 import React from 'react'
 import { Flex, Image, Box } from '@chakra-ui/core';
 
-export default function EpisodeDetail () {
+export default function EpisodeDetail ({episode}) {
   return (
     <Flex justify="center">
       <Box w="60vw" borderWidth="1px" rounded="lg" overflow="hidden" backgroundColor="c1.100">
@@ -17,7 +17,7 @@ export default function EpisodeDetail () {
           lineHeight="tight"
           isTruncated
           >
-            Episode
+            Episode: {episode.episode}
           </Box>
           <Box
           mt="1"
@@ -26,7 +26,7 @@ export default function EpisodeDetail () {
           lineHeight="tight"
           isTruncated
           >
-            Name
+            Name : {episode.name}
           </Box>
           <Box
           mt="1"
@@ -35,9 +35,9 @@ export default function EpisodeDetail () {
           lineHeight="tight"
           isTruncated
           >
-            Air Date
+            Air Date: {episode.air_date}
           </Box>
-          <Box
+          {/* <Box
           mt="1"
           fontWeight="semibold"
           as="h4"
@@ -45,7 +45,7 @@ export default function EpisodeDetail () {
           isTruncated
           >
             Characters
-          </Box>
+          </Box> */}
         </Box>
       </Box>
     </Flex>
