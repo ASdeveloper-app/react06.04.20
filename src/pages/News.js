@@ -1,6 +1,8 @@
 import React from 'react'
-import { Flex, Image, Box, Badge} from '@chakra-ui/core'
+import { Flex, Image } from '@chakra-ui/core'
 import {Link} from "react-router-dom"
+import NewsCharacters from '../components/NewsCharacters'
+import NewsEpisodes from '../components/NewsEpisodes'
 
 const News = () => {
   return (
@@ -9,59 +11,9 @@ const News = () => {
       <Image src="../news.png" alt="Rick & Morty"/>
       </Flex>
       <br/>
-      <Flex justify="center">
-        <Box maxW="sm" borderWidth="1px" rounded="lg" overflow="hidden" backgroundColor="white">
-          <Box p="6" w="50vw">
-            <Box d="flex" alignItems="baseline">
-              <Badge rounded="full" px="2" color="white" bg="#00b1c9">
-                Recent Characters
-              </Badge>
-            </Box>
-            <Box
-              mt="1"
-              fontWeight="semibold"
-              as="h4"
-              lineHeight="tight"
-              isTruncated
-            >
-              <p>Characters</p>
-              <p>Characters</p>
-              <p>Characters</p>
-              <p>Characters</p>
-            </Box>
-          </Box>
-        </Box>
-        <Box maxW="sm" borderWidth="1px" rounded="lg" overflow="hidden">
-          <Image src="morty.jpeg" alt="Morty" />
-        </Box>
-      </Flex>
+      <NewsCharacters/>
       <br/>
-      <Flex justify="center">
-        <Box maxW="sm" borderWidth="1px" rounded="lg" overflow="hidden">
-          <Image src="rick.jpeg" alt="Morty" />
-        </Box>
-        <Box maxW="sm" borderWidth="1px" rounded="lg" overflow="hidden" backgroundColor="white">
-          <Box p="6" w="50vw">
-            <Box d="flex" alignItems="baseline">
-              <Badge rounded="full" px="2" color="white" bg="#00b1c9">
-                Recent Episodes
-              </Badge>
-            </Box>
-            <Box
-              mt="1"
-              fontWeight="semibold"
-              as="h4"
-              lineHeight="tight"
-              isTruncated
-            >
-              <p>Characters</p>
-              <p>Characters</p>
-              <p>Characters</p>
-              <p>Characters</p>
-            </Box>
-          </Box>
-        </Box>
-      </Flex>
+      <NewsEpisodes/>
       <br/>
       <Flex justify="center">
         <Link to="/characters" className="btn">

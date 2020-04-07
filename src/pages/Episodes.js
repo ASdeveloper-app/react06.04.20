@@ -14,7 +14,7 @@ const Episodes = () => {
       <br/>
       <SearchBar/>
       <br/>
-      <Flex m="auto" w="80vw">
+      <Flex m="auto" w="90vw">
         <EpisodesList/>
       </Flex>
       <br/>

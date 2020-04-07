@@ -2,6 +2,8 @@ import { createStore, applyMiddleware, combineReducers } from 'redux';
 import thunk from 'redux-thunk'
 
 import { showCharacters } from './reducers/characters'
+import { showEpisodes } from './reducers/episodes'
+import { showLocations } from './reducers/locations'
 
 
 // import postCharacters from './reducers/postCharacters';
@@ -25,7 +27,9 @@ import { showCharacters } from './reducers/characters'
 
 
 const reducers = combineReducers({
-    character: showCharacters
+    character: showCharacters,
+    episode: showEpisodes,
+    location: showLocations
 });
 
 

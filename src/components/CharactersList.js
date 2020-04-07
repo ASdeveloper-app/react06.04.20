@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { SimpleGrid } from '@chakra-ui/core'
+import { SimpleGrid, Flex } from '@chakra-ui/core'
 import CharacterCard from './CharacterCard'
 // Redux
 import { connect } from 'react-redux'
@@ -21,10 +21,12 @@ class CharactersList extends Component {
   
   render(){
     return (
-      <> 
+      <>
+      <Flex justify="center"> 
         <SimpleGrid columns={[1, 2, 3]} spacing={10} marginLeft="5vw">
           {this.renderCharacterCard()}
         </SimpleGrid>
+      </Flex>
       </>
     )
   }

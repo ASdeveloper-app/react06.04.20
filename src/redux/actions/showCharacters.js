@@ -4,7 +4,7 @@ export const SHOW_CHARACTERS = 'SHOW_CHARACTERS'
 
 
 export function showCharacters(){
-    return (dispatch, getState) => {
+    return (dispatch) => {
         axios.get('https://rickandmortyapi.com/api/character')
         .then((response) => {
             console.log(response)

@@ -14,7 +14,7 @@ const Locations = () => {
       <br/>
       <SearchBar/>
       <br/>
-      <Flex m="auto" w="80vw">
+      <Flex m="auto" w="95vw">
         <LocationsList/>
       </Flex>
       <br/>

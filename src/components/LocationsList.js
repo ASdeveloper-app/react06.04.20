@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import IconButton from '@material-ui/core/IconButton';
 import Table from '@material-ui/core/Table';
@@ -10,19 +10,36 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import { Typography } from '@material-ui/core';
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
-}
+import { connect } from 'react-redux'
+import { showLocations } from '../redux/actions/showLocations'
 
-const rows = [
-  createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-  createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-  createData('Eclair', 262, 16.0, 24, 6.0),
-  createData('Cupcake', 305, 3.7, 67, 4.3),
-  createData('Gingerbread', 356, 16.0, 49, 3.9),
-];
 
-export default function LocationsList() {
+class LocationsList extends Component {
+  componentWillMount() {
+    this.props.showLocations()
+  }
+  
+  renderLocationsList() {
+    return this.props.locations.map((location, i) => {
+      return (
+        <TableRow key={i}>
+          <TableCell >
+          {location.name}
+          </TableCell>
+          <TableCell>
+            {location.dimension}
+          </TableCell>
+          <TableCell align="center">
+            <IconButton aria-label="upload picture" component="span">
+              <VisibilityIcon style={{ color: "#00b1c9" }}/>
+            </IconButton>
+          </TableCell>
+        </TableRow>
+      )
+    })
+  }
+
+render() {
   return (
     <TableContainer component={Paper}>
       <Table aria-label="simple table">
@@ -35,7 +52,7 @@ export default function LocationsList() {
             </TableCell>
             <TableCell>
             <Typography variant="h5" style={{ color: "white" }}>
-              Dimension
+             Dimension
             </Typography>
             </TableCell>
             <TableCell align="center">
@@ -46,21 +63,18 @@ export default function LocationsList() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row) => (
-            <TableRow key={row.name}>
-              <TableCell>
-                {row.name}
-              </TableCell>
-              <TableCell >{row.calories}</TableCell>
-              <TableCell align="center">
-                <IconButton aria-label="upload picture" component="span">
-                  <VisibilityIcon style={{ color: "#00b1c9" }}/>
-                </IconButton>
-              </TableCell>
-            </TableRow>
-          ))}
+        { this.renderLocationsList() }
         </TableBody>
       </Table>
     </TableContainer>
   );
+}}
+
+
+function mapStateToProps(state) {
+  return {
+    locations: state.location.list
+  }
 }
+
+export default connect(mapStateToProps, {showLocations})(LocationsList)
