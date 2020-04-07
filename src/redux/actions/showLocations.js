@@ -7,7 +7,6 @@ export function showLocations(){
     return (dispatch) => {
         axios.get('https://rickandmortyapi.com/api/location')
         .then((response) => {
-            console.log(response)
             dispatch({ type: SHOW_LOCATIONS, payload: response.data.results })
         })
     }
