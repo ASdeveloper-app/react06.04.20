@@ -4,19 +4,19 @@ export const FETCH_EPISODES_REQUEST = 'FETCH_EPISODES_REQUEST'
 export const FETCH_EPISODES_SUCCESS = 'FETCH_EPISODES_SUCCESS'
 export const FETCH_EPISODES_FAILURE = 'FETCH_EPISODES_FAILURE' 
 
-export const fechEpisodeRequest = () => {
+export const fetchEpisodeRequest = () => {
     return {
         type: FETCH_EPISODES_REQUEST
     }
 }
 
-export const fechEpisodeSuccess = (episode) => {
+export const fetchEpisodeSuccess = (episode) => {
     return {
         type: FETCH_EPISODES_SUCCESS,
         payload: episode
     }
 }
-export const fechEpisodeFailure = (error) => {
+export const fetchEpisodeFailure = (error) => {
     return {
         type: FETCH_EPISODES_FAILURE,
         payload: error
@@ -25,13 +25,13 @@ export const fechEpisodeFailure = (error) => {
 
 const fetchEpisode = (value) => {
     return(dispatch) => {
-        dispatch(fechEpisodeRequest());
+        dispatch(fetchEpisodeRequest());
         axios.get(`https://rickandmortyapi.com/api/episode/?name=${value}`)
         .then(response => {
-            dispatch(fechEpisodeSuccess([response.data.results]))
+            dispatch(fetchEpisodeSuccess([response.data.results]))
         })
         .catch(error => {
-            dispatch(fechEpisodeFailure('The Episode was not found'))
+            dispatch(fetchEpisodeFailure('The Episode was not found'))
         })
     }
 
