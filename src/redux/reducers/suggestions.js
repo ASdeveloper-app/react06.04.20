@@ -1,15 +1,26 @@
-import { fetchGetPost } from './postCharacters';
+// import { type as findSuggestionsType } from '../actions/findSuggestions';
+// import items from '../../data/items';
 
-const defaultState = fetchGetPost;
+// import { connect } from 'react-redux'
+// import { showCharacters } from '../redux/actions/showCharacters'
 
-function reducer(state = defaultState, {type, payload}) {
-  switch (type) {
-    case 'findSuggestions': {
-      return fetchGetPost
-    }
-    default:
-      return state;
-  }
-}
+// const defaultState = [];
 
-export default reducer;
+// function reducer(state = defaultState, { type, payload }) {
+//     switch (type) {
+//         case findSuggestionsType: {
+//             if (!payload) {
+//                 return [];
+//             }
+
+//             const regex = new RegExp(`^${payload}` , 'i');
+
+//             return items.filter(n => regex.test(n.title));
+//         }
+
+//         default:
+//             return state;
+//     }
+// }
+
+// export default reducer;

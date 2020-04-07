@@ -37,7 +37,7 @@ class NewsCharacters extends Component {
               lineHeight="tight"
               isTruncated
             >
-              {this.renderCharacterCard()}
+              
             </Box>
           </Box>
         </Box>

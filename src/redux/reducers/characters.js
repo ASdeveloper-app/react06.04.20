@@ -9,6 +9,6 @@ export function showCharacters(state = initialState, action){
     case SHOW_CHARACTERS:
       return Object.assign({}, state, { list: action.payload })
     default:
-      return state
+      return state;
   }
 }

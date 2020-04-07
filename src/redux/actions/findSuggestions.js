@@ -1,11 +1,8 @@
-export const type = 'findSuggestions'
+export const type = 'findSuggestions';
 
-const findSuggestions = text => {
-    return {
-        type,
-        payload: id,
-        
-    };
-}
+const findSuggestions = (text) => ({
+    type,
+    payload: text,
+});
 
-export default findSuggestions
+export default findSuggestions;

@@ -1,11 +1,9 @@
-export const type = 'findResults'
 
-const findResults = id => {
-    return {
-        type,
-        payload: id,
-        
-    };
-}
+export const type = 'findResults';
 
-export default findResults
+const findResults = (text) => ({
+    type,
+    payload: text,
+});
+
+export default findResults;

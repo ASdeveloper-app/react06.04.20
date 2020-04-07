@@ -40,7 +40,7 @@ class NewsEpisodes extends Component {
               lineHeight="tight"
               isTruncated
             >
-              {this.renderEpisodeCard()}
+              
             </Box>
           </Box>
         </Box>

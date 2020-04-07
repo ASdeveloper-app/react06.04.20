@@ -14,7 +14,7 @@ export default function CharacterCard ({character}) {
         isTruncated
         key={character.id}
         >
-          {character.name}
+         Name: {character.name}
         </Box>
         <Box
         mt="1"
@@ -23,7 +23,7 @@ export default function CharacterCard ({character}) {
         lineHeight="tight"
         isTruncated
         >
-          {character.status}
+         Status: {character.status}
         </Box>
         <br/>
         <Flex justify="center">
